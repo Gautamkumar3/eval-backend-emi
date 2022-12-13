@@ -3,6 +3,7 @@ const cors = require("cors");
 const dbConnect = require("./config/db.js");
 const UserRouter = require("./modal/user.router");
 const EmiRouter = require("./modal/emi.router");
+const mongoose=require("mongoose")
 require("dotenv").config();
 const PORT = process.env.PORT || 8000;
 mongoose.set("strictQuery", false);
