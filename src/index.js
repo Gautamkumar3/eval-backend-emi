@@ -5,6 +5,7 @@ const UserRouter = require("./modal/user.router");
 const EmiRouter = require("./modal/emi.router");
 require("dotenv").config();
 const PORT = process.env.PORT || 8000;
+mongoose.set("strictQuery", false);
 
 const app = express();
 app.use(cors());
